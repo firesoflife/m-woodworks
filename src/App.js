@@ -5,8 +5,9 @@ import SinglePost from './components/SinglePost';
 import SingleProject from './components/SingleProject';
 import Post from './components/Post';
 import Project from './components/Project';
-import Navbar from './components/Navbar';
+import Navbar from './layout/Navbar';
 import Contact from './components/Contact';
+import Footer from './layout/Footer';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route component={Project} path='/project' />
         <Route component={Contact} path='/contact' />
       </Switch>
+      <Footer />
     </BrowserRouter>
   );
 }
